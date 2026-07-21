@@ -3,8 +3,10 @@
   "private": true,
   "packageManager": "npm@10.8.2",
   "workspaces": [
+    "projects/full-code-and-html/test",
     "projects/full-code-and-html/proj1",
-    "projects/full-code-and-html/proj2"
+    "projects/full-code-and-html/proj2",
+    "projects/full-code-and-html/proj3"
   ],
   "scripts": {
     "dev": "turbo run dev",
@@ -27,5 +29,11 @@
     "turbo": "^2.10.5",
     "typescript": "^7.0.2",
     "vite": "^8.1.5"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Проект для подмножества проектов",
+  "main": "index.js",
+  "keywords": [],
+  "author": "shamber",
+  "license": "ISC"
 }
