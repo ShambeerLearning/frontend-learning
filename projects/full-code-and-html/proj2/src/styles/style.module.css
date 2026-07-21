@@ -1,16 +1,54 @@
-.card {
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.h2-card {
-    color: black;
-}
-
-.text-card {
-    color: gray;
-}
-
-.crystal-grid {
+.crystalGrid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #c4b5fd;
+    box-shadow: 0 12px 20px -3px rgba(139, 92, 246, 0.15), 0 4px 6px -2px rgba(139, 92, 246, 0.05);
+}
+
+.h2Card {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.textCard {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.emptyText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    text-align: center;
 }

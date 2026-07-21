@@ -1,9 +1,8 @@
 import { render } from "preact";
-import { CrystalList } from "./scripts/crystalList";
-import data from "./data/dataCrystal.json";
+import { App } from "./scripts/App";
 
 const appContainer = document.getElementById("app");
 
 if (appContainer) {
-    render(<CrystalList items={data} />, appContainer);
+    render(<App />, appContainer);
 }

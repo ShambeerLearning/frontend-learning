@@ -1,0 +1,77 @@
+[
+  {
+    "id": "cryst-aer",
+    "name": "Кристалл Aer (Воздух)",
+    "countVis": 450
+  },
+  {
+    "id": "cryst-terra",
+    "name": "Кристалл Terra (Земля)",
+    "countVis": 210
+  },
+  {
+    "id": "cryst-ignis",
+    "name": "Кристалл Ignis (Огонь)",
+    "countVis": 95
+  },
+  {
+    "id": "cryst-aqua",
+    "name": "Кристалл Aqua (Вода)",
+    "countVis": 5
+  },
+  {
+    "id": "cryst-ordo",
+    "name": "Кристалл Ordo (Порядок)",
+    "countVis": 134
+  },
+  {
+    "id": "cryst-perditio",
+    "name": "Кристалл Perditio (Энтропия)",
+    "countVis": 890
+  },
+  {
+    "id": "cryst-vitium",
+    "name": "Кристалл Vitium (Заражение)",
+    "countVis": 300
+  },
+  {
+    "id": "cryst-praecantatio",
+    "name": "Кристалл Praecantatio (Магия)",
+    "countVis": 67
+  },
+  {
+    "id": "cryst-auram",
+    "name": "Кристалл Auram (Аура)",
+    "countVis": 412
+  },
+  {
+    "id": "cryst-alienis",
+    "name": "Кристалл Alienis (Чужеродность)",
+    "countVis": 275
+  },
+  {
+    "id": "cryst-motus",
+    "name": "Кристалл Motus (Движение)",
+    "countVis": 19
+  },
+  {
+    "id": "cryst-visum",
+    "name": "Кристалл Visum (Зрение)",
+    "countVis": 43
+  },
+  {
+    "id": "cryst-spiritus",
+    "name": "Кристалл Spiritus (Душа)",
+    "countVis": 156
+  },
+  {
+    "id": "cryst-tenebrae",
+    "name": "Кристалл Tenebrae (Тьма)",
+    "countVis": 620
+  },
+  {
+    "id": "cryst-vacuos",
+    "name": "Кристалл Vacuos (Пустота)",
+    "countVis": 315
+  }
+]
