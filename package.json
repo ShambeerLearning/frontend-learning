@@ -6,7 +6,8 @@
     "projects/full-code-and-html/test",
     "projects/full-code-and-html/proj1",
     "projects/full-code-and-html/proj2",
-    "projects/full-code-and-html/proj3"
+    "projects/full-code-and-html/proj3",
+    "projects/full-code-and-html/proj4"
   ],
   "scripts": {
     "dev": "turbo run dev",
