@@ -7,7 +7,8 @@
     "projects/full-code-and-html/proj1",
     "projects/full-code-and-html/proj2",
     "projects/full-code-and-html/proj3",
-    "projects/full-code-and-html/proj4"
+    "projects/full-code-and-html/proj4",
+    "projects/only-typescript/fun-proj/test-console"
   ],
   "scripts": {
     "dev": "turbo run dev",
