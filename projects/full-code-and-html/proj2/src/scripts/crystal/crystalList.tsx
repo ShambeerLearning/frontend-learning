@@ -1,6 +1,6 @@
-import { Crystal } from "../types";
+import { Crystal } from "@/scripts/types";
 import { ParseCrystal } from "./renderCardCrystal";
-import styles from "../../styles/style.module.css";
+import styles from "@/styles/style.module.css";
 
 type ListProps = {
     items: Crystal[];

@@ -1,6 +1,6 @@
-import {CrystalList} from "./crystalList";
-import data from "../../data/crystal/dataCrystal.json";
-import styles from  "../../styles/style.module.css";
+import { CrystalList } from "./crystalList";
+import data from "@/data/crystal/dataCrystal.json";
+import styles from "@/styles/style.module.css";
 
 export function CrystalContainer() {
     if (!Array.isArray(data) || data.length === 0) {

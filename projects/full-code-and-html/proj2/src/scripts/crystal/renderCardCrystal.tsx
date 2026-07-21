@@ -1,5 +1,5 @@
-import { Crystal } from "../types";
-import styles from "../../styles/style.module.css";
+import { Crystal } from "@/scripts/types";
+import styles from "@/styles/style.module.css";
 
 type CardProps = {
     item: Crystal;

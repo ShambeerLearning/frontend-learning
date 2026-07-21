@@ -14,17 +14,18 @@
     "old-p": "cd projects/only-typescript/old-proj && npx tsx --watch"
   },
   "dependencies": {
-    "@types/node": "^26.1.1",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.3.6",
-    "preact": "^10.29.7",
     "prompt-sync": "^4.2.0",
-    "vite": "^8.1.3",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^26.1.1",
     "@types/prompt-sync": "^4.2.3",
-    "turbo": "^2.10.5"
+    "preact": "^10.29.7",
+    "turbo": "^2.10.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
   }
 }
