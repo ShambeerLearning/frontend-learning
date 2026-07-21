@@ -1,0 +1,77 @@
+[
+  {
+    "id": "cryst-005",
+    "name": "Изумруд",
+    "countVis": 450
+  },
+  {
+    "id": "cryst-006",
+    "name": "Топаз",
+    "countVis": 210
+  },
+  {
+    "id": "cryst-007",
+    "name": "Опал",
+    "countVis": 95
+  },
+  {
+    "id": "cryst-008",
+    "name": "Александрит",
+    "countVis": 5
+  },
+  {
+    "id": "cryst-009",
+    "name": "Лунный камень",
+    "countVis": 134
+  },
+  {
+    "id": "cryst-010",
+    "name": "Малахит",
+    "countVis": 890
+  },
+  {
+    "id": "cryst-011",
+    "name": "Нефрит",
+    "countVis": 300
+  },
+  {
+    "id": "cryst-012",
+    "name": "Турмалин",
+    "countVis": 67
+  },
+  {
+    "id": "cryst-013",
+    "name": "Гранат",
+    "countVis": 412
+  },
+  {
+    "id": "cryst-014",
+    "name": "Аквамарин",
+    "countVis": 275
+  },
+  {
+    "id": "cryst-015",
+    "name": "Циркон",
+    "countVis": 19
+  },
+  {
+    "id": "cryst-016",
+    "name": "Шпинель",
+    "countVis": 43
+  },
+  {
+    "id": "cryst-017",
+    "name": "Авантюрин",
+    "countVis": 156
+  },
+  {
+    "id": "cryst-018",
+    "name": "Тигровый глаз",
+    "countVis": 620
+  },
+  {
+    "id": "cryst-019",
+    "name": "Лазурит",
+    "countVis": 315
+  }
+]

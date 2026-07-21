@@ -1,0 +1,30 @@
+{
+  "name": "frontend-learning",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "projects/full-code-and-html/proj1",
+    "projects/full-code-and-html/proj2"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "single-p": "cd projects/only-typescript/single-proj && npx tsx --watch",
+    "fun-p": "cd projects/only-typescript/fun-proj && npx tsx --watch",
+    "json-p": "cd projects/only-typescript/json-proj && npx tsx --watch",
+    "old-p": "cd projects/only-typescript/old-proj && npx tsx --watch"
+  },
+  "dependencies": {
+    "@types/node": "^26.1.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.6",
+    "preact": "^10.29.7",
+    "prompt-sync": "^4.2.0",
+    "vite": "^8.1.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/prompt-sync": "^4.2.3",
+    "turbo": "^2.10.5"
+  }
+}

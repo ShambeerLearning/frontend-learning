@@ -1,0 +1,37 @@
+# Зависимости
+node_modules/
+
+# Turborepo
+.turbo/
+
+# Сборка и кэш
+dist/
+dist-ssr/
+build/
+.vite/
+*.tsbuildinfo
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+
+# Переменные окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE и редакторы (WebStorm, VS Code)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Системные файлы ОС
+.DS_Store
+Thumbs.db
