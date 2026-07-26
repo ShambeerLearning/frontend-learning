@@ -24,6 +24,7 @@
     "fs": "^0.0.1-security",
     "fs-extra": "^11.3.6",
     "prompt-sync": "^4.2.0",
+    "vite-plugin-singlefile": "^2.3.3",
     "zod": "^4.4.3"
   },
   "devDependencies": {

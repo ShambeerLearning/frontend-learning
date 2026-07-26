@@ -50,13 +50,27 @@ const dataJson = (
   "main": "./src/main.js",
   "scripts": {
     "test": "echo \\"Error: no test specified\\" && exit 1",
-    "dev": "npx vite --host"
+    "dev": "npx vite --host",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
 }`);
+
+const dataViteConfig = (
+`import {defineConfig} from 'vite';
+import { viteSingleFile } from 'vite-plugin-singlefile';
+
+export default defineConfig({
+    plugins: [viteSingleFile()],
+});
+`);
+
+const viteEnvConfig = (
+`/// <reference types="vite/client" />`
+);
 
 function genStructure(nameProject){
     const pathSrc = `./projects/autogen/${nameProject}/src`;
@@ -66,7 +80,9 @@ function genStructure(nameProject){
 
     fs.writeFileSync(path.join(pathDir, "index.html"), dataIndex);
     fs.writeFileSync(path.join(pathDir, "package.json"), dataJson);
+    fs.writeFileSync(path.join(pathDir, "vite.config.js"), dataViteConfig);
 
+    fs.writeFileSync(path.join(pathSrc, "vite-env.d.ts"), viteEnvConfig);
     fs.writeFileSync(path.join(pathSrc, "markup.html"), dataMarkup);
     fs.writeFileSync(path.join(pathSrc, "style.css"), dataStyles);
     fs.writeFileSync(path.join(pathSrc, "main.js"), dataScript);
