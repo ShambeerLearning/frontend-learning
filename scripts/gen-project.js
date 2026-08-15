@@ -33,13 +33,11 @@ function genStructure(nameProject){
         fs.writeFileSync(path.join(pathSrc, "main.js"), dataScript);
     }
 
-    if (fs.existsSync(pathSrc)) {
-        createStructureSrc();
-    }
-    else {
+    if (!fs.existsSync(pathSrc)) {
         fs.mkdirSync(pathSrc, { recursive: true });
-        createStructureSrc();
     }
+
+    createStructureSrc();
 
 }
 
