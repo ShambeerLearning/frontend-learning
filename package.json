@@ -17,12 +17,14 @@
     "fun-p": "cd projects/only-typescript/fun-proj && npx tsx --watch",
     "json-p": "cd projects/only-typescript/json-proj && npx tsx --watch",
     "old-p": "cd projects/only-typescript/old-proj && npx tsx --watch",
-    "gen-project": "node scripts/gen-project.js build"
+    "gen-project": "node scripts/gen-project.js build",
+    "start-project": "node scripts/start-project.js run"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
     "fs-extra": "^11.3.6",
     "prompt-sync": "^4.2.0",
+    "vite-plugin-singlefile": "^2.3.3",
     "zod": "^4.4.3"
   },
   "devDependencies": {

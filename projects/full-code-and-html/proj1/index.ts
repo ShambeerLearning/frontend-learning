@@ -10,5 +10,5 @@ const fem: femboy = {
 
 const diveb = document.getElementById("eb");
 if (diveb) {
-    diveb.textContent = fem.name;a
+    diveb.textContent = fem.name;
 }
