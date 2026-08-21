@@ -1,6 +1,6 @@
 function createElements() {
     let cards = [];
-    for(let i = 0; i < 100; i++) {
+    for(let i = 10; i > 0; i--) {
         cards.push(i);
     }
     return cards;
