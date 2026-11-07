@@ -1,0 +1,99 @@
+import express from "express";
+import pkg from "pg";
+const { Pool } = pkg;
+import bodyParser from "body-parser";
+import cors from "cors";
+import { config } from "./db.js";
+import { bodypcRouter } from "./controllers/bodypc.controller.js";
+import { cpuRouter } from "./controllers/cpu.controller.js";
+import { configuratorpcRouter } from "./controllers/configuratorpc.controller.js";
+import { gpuRouter } from "./controllers/gpu.controller.js";
+import { motherboardRouter } from "./controllers/motherboard.controller.js";
+import { operational_memoryRouter } from "./controllers/operational_memory.controller.js";
+import { power_unitRouter } from "./controllers/power_unit.controller.js";
+import { storage_deviceRouter } from "./controllers/storage_device.controller.js";
+код server.js
+import { cooling_iceRouter } from "./controllers/cooling.controller.js";
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.json());
+
+const port = process.env.SERVER_PORT;
+const pool = new Pool(config);
+
+app.use("/cpu", cpuRouter);
+app.use("/bodypc", bodypcRouter);
+app.use("/configuratorpc", configuratorpcRouter);
+app.use("/gpu", gpuRouter);
+app.use("/motherboard", motherboardRouter);
+app.use("/operational_memory", operational_memoryRouter);
+app.use("/power_unit", power_unitRouter);
+app.use("/storage_device", storage_deviceRouter);
+app.use("/cooling_ice", cooling_iceRouter);
+
+
+
+app.listen(port, () => {
+    console.log(`Сервер запущен на http://localhost:${port}`);
+});
+
+pool.connect((err) => {
+    if (err) {
+        console.error("Ошибка подключению к базе данных", err.stack);
+    } else {
+        console.log("Подключение к базе данных установлено");
+    }
+});
+
+код .env
+DB_USER=postgres
+DB_HOST=localhost
+DB_NAME=diplom
+DB_PASSWORD=password
+DB_PORT=5432
+SERVER_PORT=3000
+
+код db.js
+import dotenv from "dotenv";
+import pkg from "pg";
+const { Pool } = pkg;
+dotenv.config();
+export const config = {
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
+};
+
+export const pool = new Pool(config);
+
+код configuratorpc.servic.js
+import {pool} from "../db.js";
+
+export class ConfiguratorpcService{
+    async getconfiguratorpcs() {
+        const { rows } = await pool.query("SELECT * FROM configurator_pc");
+        return rows;
+    }
+}
+
+код configuratorpc.controller.js
+import {Router} from "express";
+import {ConfiguratorpcService} from "../services/configuratorpc.service.js";
+
+const router = Router();
+const configuratorpcService = new ConfiguratorpcService();
+router.get("/", async (req, res) => {
+    try {
+        const result = await configuratorpcService.getconfiguratorpcs();
+        res.status(200).json(result);
+    } catch (err) {
+        console.error("Ошибка!", err.stack);
+        res.status(500).json({error: "Ошибка сервера!"});
+    }
+});
+
+export const configuratorpcRouter = router;

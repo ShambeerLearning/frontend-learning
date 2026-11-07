@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: Archagelsk;
+    src: url(../fonts/Archangelsk.ttf);
+}
+
+body {
+    margin: 0;
+    font-size: normal;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Archagelsk;
+}
+
+.container {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 40px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.header {
+    padding: 20px 0 440px;
+    background-image: url(../img/11.jpg);
+    background-repeat: no-repeat;
+}
+
+.banner {
+    padding-top: 537px;
+}
+
+.banner-bg {
+    display: inline-block;
+    background-image: url(../img/Rectangle_59.svg);
+    width: 628px;
+    height: 366px;
+    float: right;
+}
+
+.banner_text {
+    margin: 70px 70px 25px 70px;
+    font-size: 62px;
+    text-align: left;
+}
+
+.banner-button {
+    display: block;
+    text-align: center;
+    height: 100px;
+    width: 320px;
+    margin: 0 212px 70px 70px;
+    background-color: black;
+    color: #f8f200;
+    font-size: 24px;
+    line-height: 40px;
+    border: 0;
+}
+
+.banner-link {
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 24px;
+    color: #f8f200;
+    text-decoration: none;
+}
+
+ .nav-list {
+    display: flex;
+    align-items: flex-end;
+ }
+
+ .nav-item {
+    margin-right: 40px;
+ }
+
+ .banner-button:hover {
+    background-color: #1e1e2e;
+ }
+
+ .banner-button:active {
+    background-color: #1e1e2e;
+    box-shadow: 0 5px #666666;
+    transform: translateY(4px);
+ }

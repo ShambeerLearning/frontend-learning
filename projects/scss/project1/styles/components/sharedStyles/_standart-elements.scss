@@ -1,0 +1,10 @@
+@use "dimensions" as shareStyles;
+
+%standart-label {
+  border: shareStyles.$basic-border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: shareStyles.$basic-gap;
+}

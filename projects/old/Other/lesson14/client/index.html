@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+</head>
+<body>
+    <div>
+        <h2>Добавление заказа</h2>
+        <form action="" id="addForm">
+            <select name="" id="clients-list"></select>
+            <select name="" id="products-list"></select>
+            <button type="submit">Добавить</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <h2>Список заказов</h2>
+    <div id="purchases-list"></div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/get.connect.js"></script>
+    <script type="module" src="./scripts/post.connect.js"></script> 
+</body>
+</html>

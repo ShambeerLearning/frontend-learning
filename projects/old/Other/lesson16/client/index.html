@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ</title>
+</head>
+<body>
+    <div>
+        <h2>Добавление заказа</h2>
+        <form action="" id="addForm">
+            <select name="" id="clients-list"></select>
+            <select name="" id="products-list"></select>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>
+        <h2>Редактирование заказа</h2>
+        <form id="editForm">
+            <select name="" id="number-edit"></select>
+            <select name="" id="clients-edit"></select>
+            <select name="" id="products-edit"></select>
+            <button type="submit">Изменить</button>
+        </form>
+    </div>
+    <div>
+        <h2>Удаление заказа</h2>
+        <form action="" id="deleteForm">
+            <select name="" id="number-delete"></select>
+            <button type="submit">Удалить</button>
+        </form>
+    </div>  
+    <div>
+        <h2>Список заказов</h2>
+        <div id="purchases-list"></div>
+    </div>
+
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/get.connect.js"></script>
+    <script type="module" src="./scripts/post.connect.js"></script>
+    <script type="module" src="./scripts/edit.connect.js"></script>
+    <script type="module" src="./scripts/delete.connect.js"></script>
+</body>
+</html>

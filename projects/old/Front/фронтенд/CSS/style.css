@@ -1,0 +1,614 @@
+@font-face {
+  font-family: "abema";
+  src: url(../FONT/ofont.ru_Archangelsk.ttf);
+}
+
+@font-face {
+  font-family: "dnisheprorvalo";
+  src: url(../FONT/Roboto-Regular.ttf);
+}
+
+.background {
+  background-image: url(../IMG/background.png);
+  background-size: cover;
+  width: 100vw;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0px 36px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 100%;
+}
+
+.logo {
+  width: 296px;
+}
+
+.spisok {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.spisok li {
+  width: 30px;
+  height: 30px;
+}
+
+.header1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0px 36px;
+}
+
+.headerblock {
+  width: 624px;
+  height: 369px;
+  position: relative;
+}
+
+.headerblock img {
+  z-index: 0;
+  position: absolute;
+}
+
+.headertext {
+  position: relative;
+  font-family: "abema";
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.knopa {
+  padding: 19px 50px;
+  color: #f8f200;
+  background-color: black;
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  bottom: 50px;
+  font-family: "dnisheprorvalo";
+}
+
+.h1knopa {
+  padding: 70px;
+  height: 229px;
+}
+
+.nightcity {
+  display: flex;
+  font-family: "abema";
+  font-size: 62px;
+  position: relative;
+  margin-left: 320px;
+  margin-right: 640px;
+  padding-top: 70px;
+  width: 996px;
+}
+
+.opisanie {
+  font-family: "dnisheprorvalo";
+  color: gray;
+  position: relative;
+  font-size: 18px;
+  margin-left: 320px;
+  margin-right: 648px;
+  padding-top: 20px;
+  width: 952px;
+  line-height: 32px;
+}
+
+.cyberpunk {
+  color: #52bedc;
+  display: inline;
+}
+
+.kartinkiflex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.kartinki {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  position: relative;
+  margin-left: 320px;
+  margin-right: 320px;
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+
+.pokupka {
+  background-size: cover;
+  width: 1920px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 0 auto;
+}
+
+.verhuska {
+  background-image: url(../imgstr3/22\ 1.svg);
+  height: 70px;
+  margin-bottom: -5px;
+}
+
+.akcia {
+  position: relative;
+  margin-left: 320px;
+  padding-top: 15px;
+}
+
+.zagolovok {
+  color: white;
+  font-family: "abema";
+  font-size: 62px;
+  padding-top: 70px;
+}
+
+.strokapokupki {
+  display: flex;
+  gap: 32px;
+}
+
+.opisanie2 {
+  color: white;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+  position: relative;
+  margin-left: 320px;
+  margin-right: 648px;
+  padding-top: 39px;
+  width: 952px;
+  line-height: 32px;
+}
+
+.bim {
+  color: white;
+  user-select: none;
+  font-family: "dnisheprorvalo";
+  font-size: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  height: 383px;
+}
+
+input:nth-child(-n + 3) {
+  margin-bottom: 30px;
+  background-color: black;
+  border: none;
+  color: #777777;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+}
+input[type="submit"] {
+  margin-bottom: 15px;
+  padding: 19px 50px;
+  background-color: #f8f200;
+  color: black;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+  width: 192px;
+  font-weight: 600;
+  border: none;
+}
+input:nth-child(-n + 2) {
+  padding: 14px 7px 14px 0px;
+  border-bottom: solid 1px #777777;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  color: #777777;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+}
+
+.game__form-label {
+  width: 270px;
+  max-height: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  border: 1px dashed #777;
+  padding: 40px;
+  margin-bottom: 32px;
+}
+
+.game__form-upload {
+  display: none;
+}
+
+.game__form-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration-line: underline;
+  margin-bottom: 5px;
+}
+
+.game__form-subtext {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.game__form-checkbox {
+  position: relative;
+}
+
+.game__form-checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.game__form-checkbox-text {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.game__form-checkbox-text::before {
+  content: "";
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game__form-checkbox-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  outline: 2px solid #fff;
+}
+
+.game__form-checkbox-input:checked + .game__form-checkbox-text::before {
+  background: url(../imgstr3/Rectangle\ 44.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.formandimg {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 320px;
+  padding: 15px 0px 70px 0px;
+  height: 456px;
+  align-items: end;
+}
+
+.monitor {
+  background-image: url(../imgstr4/Rectangle\ 593.svg);
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 0 auto;
+  margin: 0 auto;
+}
+
+.opisanie3 {
+  display: flex;
+  gap: 32px;
+  padding: 70px 320px 70px 320px;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.monitorandnad {
+  display: flex;
+  flex-direction: column;
+}
+
+.nad {
+  display: flex;
+  gap: 25px;
+  margin-top: 26px;
+  width: 540px;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+
+.nadpis {
+  font-family: "abema";
+  font-size: 62px;
+  width: 560px;
+}
+
+.opis4 {
+  width: 624px;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 25px;
+}
+
+.ikon {
+  width: 32px;
+  height: 32px;
+}
+
+.nadpii {
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+}
+
+.ikonki {
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+  gap: 15px;
+}
+
+.ikonandimg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.podr {
+  display: inline-flex;
+  margin-top: 40px;
+  padding: 19px 50px;
+  color: #f8f200;
+  background-color: black;
+  font-weight: 700;
+  font-size: 24px;
+  bottom: 50px;
+  font-family: "dnisheprorvalo";
+}
+
+.str5 {
+  background-image: url(../imgstr5/Rectangle\ 596.svg);
+  background-size: cover;
+  width: 100vw;
+  height: 717px;
+  background-repeat: no-repeat;
+  background-position: 0 auto;
+}
+
+.zagstr5 {
+  font-family: "abema";
+  font-size: 62px;
+  width: 624px;
+  color: #ffffff;
+}
+
+.str5andtext {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+}
+
+.opissrt55 {
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+  color: white;
+}
+
+.nadstr5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+  gap: 15px;
+  width: 466px;
+}
+
+.imgtextstr5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.oglstr5 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 70px;
+}
+
+.opisigr {
+  font-family: "dnisheprorvalo";
+  font-size: 24px;
+}
+
+.neogl {
+  display: flex;
+  flex-direction: column;
+}
+
+.cyberpunk2 {
+  color: #52bedc;
+  font-family: "dnisheprorvalo";
+  font-size: 24px;
+}
+
+.ps52 {
+  display: flex;
+  flex-direction: column;
+  gap: 47.81px;
+}
+
+.ps531 {
+  width: 62px;
+  height: 35.19px;
+}
+
+.ps532 {
+  width: 58px;
+  height: 50.27px;
+}
+
+.xbox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 55.53px;
+}
+
+.xbox531 {
+  width: 178px;
+  height: 35.19px;
+}
+
+.xbox532 {
+  width: 168px;
+  height: 35.19px;
+}
+
+.psxbox2 {
+  display: flex;
+  gap: 79px;
+}
+
+.psx {
+  display: flex;
+  flex-direction: column;
+  gap: 24.85px;
+}
+
+.flexfoot {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  gap: 390.95px;
+  align-items: center;
+  padding: 13px 321px 13px 320px;
+}
+
+.petux {
+  display: flex;
+  gap: 32px;
+  font-family: "dnisheprorvalo";
+  font-size: 18px;
+  white-space: pre;
+}
+
+.textfoot {
+  color: #ffffff;
+  font-family: "dnisheprorvalo";
+  font-size: 12px;
+  text-align: center;
+  background-color: black;
+  padding: 13px 0px 13px 0px;
+}
+
+.a {
+  transition: all 0.25s ease-in-out;
+}
+
+.spisok .a:hover {
+  -moz-transform: scale(2) rotate(360deg);
+  -webkit-transform: scale(2) rotate(360deg);
+  -o-transform: scale(2) rotate(360deg);
+  -ms-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(360deg);
+}
+
+.spisok .a:active {
+  -moz-transform: scale(0.5) skew(70deg, 20deg);
+  -webkit-transform: scale(0.5) skew(70deg, 20deg);
+  -o-transform: scale(0.5) skew(70deg, 20deg);
+  -ms-transform: scale(0.5) skew(70deg, 20deg);
+  transform: scale(0.5) skew(70deg, 20deg);
+}
+
+.h1knopa a .knopa:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.h1knopa a .knopa {
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  transition: all 0.25s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.babuy {
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.babuy:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.petux a {
+  color: #000000;
+}
+
+.nightcity222 {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.verhuska2 {
+  background-image: url(../imgstr4/22\ 2.svg);
+  height: 70px;
+  margin-bottom: -5px;
+}
+
+.superpokupka {
+  background-color: black;
+}
+
+.bimbaba {
+  background-image: url(../imgstr3/Group\ 217.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 788px;
+  height: 456px;
+}

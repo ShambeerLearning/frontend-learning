@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "abema";
+    src: url(../FONT/ofont.ru_Archangelsk.ttf);
+}
+
+@font-face {
+    font-family: "dnisheprorvalo";
+    src: url(../FONT/Roboto-Regular.ttf);
+}
+
+.background {
+    background-image: url(../IMG/background.png);
+    background-size: cover;
+    width: 100vw;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 100%;
+}
+
+.logo {
+    width: 296px;
+}
+
+.spisok {
+    display: flex;
+    gap: 40px;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.spisok li {
+    width: 30px;
+    height: 30px;
+}
+
+.header1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.headerblock {
+    width: 624px;
+    height: 369px;
+    position: relative;
+}
+
+.headerblock img {
+    z-index: 0;
+    position: absolute;
+}
+
+.headertext {
+    font-family: "abema";
+    font-weight: 700;
+    font-size: 58px;
+}
+
+.knopa {
+    padding: 19px 50px;
+    color: #F8F200;
+    background-color: black;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    bottom: 50px;
+    font-family: "dnisheprorvalo";
+}
+
+.h1knopa {
+    z-index: 1;
+    position: absolute;
+    padding: 70px;
+    height: 229px;
+}
+
+.nightcity {
+    display: flex;
+    font-family: "abema";
+    font-size: 62px;
+    position: relative;
+    margin-left: 320px;
+    margin-right: 640px;
+    padding-top: 70px;
+    width: 996px;
+}
+
+.opisanie {
+    font-family: "dnisheprorvalo";
+    color: gray;
+    position: relative;
+    font-size: 18px;
+    margin-left: 320px;
+    margin-right: 648px;
+    padding-top: 20px;
+    width: 952px;
+    line-height: 32px;
+}
+
+.cyberpunk {
+    color: #52BEDC;
+    display: inline;
+}
+
+.kartinkiflex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.kartinki {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    margin-left: 320px;
+    margin-right: 320px;
+    padding-top: 68px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.pokupka {
+margin-top: -2px;
+}
+
+

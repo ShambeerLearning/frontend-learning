@@ -1,0 +1,23 @@
+
+html{
+    font-size: 62.5%;
+}
+.killer-list{
+    columns: 2;
+}
+.category-list{
+    font-size: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px dotted black;
+}
+
+@media (max-width: 700px) {
+    .killer-list{
+        columns: 1;
+    }
+    
+    html{
+        font-size: 50%;
+    }
+}

@@ -1,0 +1,18 @@
+h1{
+    font-size: 24px;
+}
+
+.board {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+}
+
+.cell {
+    border: 1px solid black;
+    font-size: 600%;
+    text-align: center;
+}

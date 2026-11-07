@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: #0f0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .trippy {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background: radial-gradient(
+          circle,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(0, 255, 255, 1) 100%
+        );
+        border-radius: 50%;
+        animation: spin 1s infinite linear, colors 2s infinite;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg) scale(3);
+        }
+      }
+
+      @keyframes colors {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        const dots = Array.from(document.getElementsByClassName("trippy"));
+        if (dots.length > 20) dots[0].remove();
+
+        const dot = document.createElement("div");
+        dot.className = "trippy";
+        dot.style.left = `${e.clientX - 50}px`;
+        dot.style.top = `${e.clientY - 50}px`;
+        document.body.appendChild(dot);
+      });
+    </script>
+  </body>
+</html>

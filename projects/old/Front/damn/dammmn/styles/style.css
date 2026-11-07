@@ -1,0 +1,32 @@
+body{
+    background-color: bisque;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.writeInput{
+    width: 300px;
+    height: 25px;
+}
+
+.sendBtn{
+    width: 100px;
+    height: 25px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.output{
+    font-size: 300px;
+    border: solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}

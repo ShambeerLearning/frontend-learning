@@ -1,0 +1,81 @@
+:root {
+    --text-color: rgb(211, 209, 209);
+    --background-color: #010314;
+    --button-color: linear-gradient(
+      rgba(28, 19, 66, 0.6) 0,
+      rgba(9, 7, 22, 0.6) calc(100% + 40%),
+      #7752fe calc(100% + 80%),
+      #fff calc(100% + 120%)
+    );
+    --button-border: hsla(0, 0%, 100%, 0.1) 1px solid;
+    --box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+      0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+@font-face {
+    font-family: "Monserrat";
+    src: url(../fonts/Monserrat/Montserrat-VariableFont_wght.ttf);
+}
+  
+*{
+    font-family: "Monserrat", sans-serif;
+}
+  
+html {
+  font-size: 62.5%;
+}
+  
+body {
+  background-color: var(--background-color);
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.card_item {
+  color: var(--text-color);
+  border: 1px var(--text-color) solid;
+  border-radius: 20px;
+  padding: 1rem;
+}
+  
+.card_item div {
+  margin-bottom: 1.5rem;
+}
+  
+.negr-list {
+  font-size: 1.7rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+  
+.pagebuttons {
+  display: flex;
+  align-items: center;
+  padding: 1rem 6rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--button-color);
+  border: var(--button-border);
+  box-shadow: var(--box-shadow);
+}
+  
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.spisok{
+  color: var(--text-color);
+  font-size: 4rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+  

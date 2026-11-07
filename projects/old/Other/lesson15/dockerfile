@@ -1,0 +1,6 @@
+FROM node:19
+WORKDIR ./lesson15
+COPY . .
+RUN npm run dev
+EXPOSE 3000
+CMD ["npm", "start"]

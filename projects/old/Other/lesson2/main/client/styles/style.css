@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --box-bg-color: #080a1a;
+  --box-border: 1px solid #35353565;
+  --gray-color: #969696;
+  --primary: #7752fe;
+  --gradient-offset: 100%;
+  --text-color: #d1d1d1;
+  --shadow-color: hsla(0, 0%, 100%, 0.1);
+  --order-border: 1px solid #35353565;
+  --order-bg: linear-gradient(
+    rgba(48, 39, 85, 0.6) 0,
+    rgba(10, 6, 34, 0.6) calc(var(--gradient-offset) + 40%),
+    var(--primary) calc(var(--gradient-offset) + 80%),
+    #fff calc(var(--gradient-offset) + 120%)
+  );
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #010314;
+}
+#orders-list {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+
+.ordercss {
+  border: var(--order-border);
+  background-color: var(--order-bg);
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+  0 2px 8px rgba(0, 0, 0, 0.3);
+;
+}
+
+.magaz {
+  font-size: 4rem;
+  color: white;
+}

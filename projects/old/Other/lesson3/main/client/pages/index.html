@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="../styles/sysStyles/reset.css">
+    <link rel="stylesheet" href="../styles/pyrchasesStyles.css">
+    <link rel="shortcut icon" href="../logo/tab/pyrchaseslogo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="./admin.html"><button class="pagebuttons">Админ панель</button></a>
+        <a href="./clients.html"><button class="pagebuttons">Cписок клиентов</button></a>
+        <a href="./negrs.html"><button class="pagebuttons">Список негров</button></a>
+    </header>
+    <div class="spisok">Список заказов</div>
+    <div id="negr-list" class="negr-list"></div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../scripts/connectpurchaseget.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    background: bisque;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons{
+    width: 100px;
+    height: 50px;
+    background: aquamarine;
+    border-radius: 5px;
+}
+
+.GetInputName,
+.GetInputAge,
+.GetInputPost{
+    width: 500px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.GetInputDescription{
+    width: 500px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.showJson{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-card{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Output{
+    margin: 30px 10px 10px 10px;
+}
+
+.Input{
+    margin: 10px;
+}
+
+.Zagolovok{
+    font-size: 30px;
+    margin: 10px;
+}

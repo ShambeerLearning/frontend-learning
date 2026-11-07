@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты</title>
+    <link rel="stylesheet" href="../styles/sysStyles/reset.css">
+    <link rel="stylesheet" href="../styles/clientStyles.css">
+    <link rel="shortcut icon" href="../logo/tab/clientlogo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="./admin.html"><button class="pagebuttons">Админ панель</button></a>
+        <a href="./index.html"><button class="pagebuttons">Cписок заказов</button></a>
+        <a href="./negrs.html"><button class="pagebuttons">Список негров</button></a>
+    </header>
+    <div class="spisok">Список клиентов</div>
+    <div id="clientget-list" class="clientget-list"></div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../scripts/connectgetclients.js"></script>
+</body>
+</html>

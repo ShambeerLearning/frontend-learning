@@ -1,0 +1,1 @@
+export const get_link = `http://localhost:3000`;

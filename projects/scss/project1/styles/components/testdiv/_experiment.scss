@@ -1,0 +1,20 @@
+@use "../sharedStyles";
+
+.experiment {
+  color: sharedStyles.$color-text;
+  background-color: sharedStyles.$bg-color;
+  max-width: 500px;
+  width: auto;
+  height: auto;
+  padding: 25px;
+}
+
+.label-form {
+  @extend %standart-label;
+}
+
+.label-form input {
+  border-radius: sharedStyles.$basic-border-radius;
+  height: 25px;
+  box-shadow: none;
+}

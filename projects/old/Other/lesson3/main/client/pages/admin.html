@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="../styles/sysStyles/reset.css">
+    <link rel="stylesheet" href="../styles/adminPanel.css">
+    <link rel="stylesheet" href="../styles/infoStyles.css">
+    <link rel="shortcut icon" href="../logo/tab/adminpanellogo.png" type="image/png">
+</head>
+<body>
+
+        <div id="message" style="display: none;"></div>
+
+
+    <header class="headbuttons">
+        <a href="./index.html"><button class="pagebuttons">Список заказов</button></a>
+        <a href="./clients.html"><button class="pagebuttons">Cписок клиентов</button></a>
+        <a href="./negrs.html"><button class="pagebuttons">Список негров</button></a>
+    </header>
+    
+    <div class="wrapper">
+     <div class="writeform"><h3>Добавление заказа</h3>
+        <form id="negrsellForm" class="addForm">
+            <div class="inputs">
+                <select name="" id="clientName">
+                    <option value="" selected="selected" required class="textinput">Выберите клиента</option>
+                </select>
+                <select name="" id="negrName">
+                    <option value="" selected="selected" required class="textinput">Выберите негра</option>
+                </select>
+                <input type="text" id="priceNegr" required placeholder="Цена негра" class="textinput">
+            </div>
+            <button type="submit" class="pagebuttons">Добавить</button>
+        </form>
+    </div>
+
+    <div class="writeform"><h3>Добавление клиента</h3>
+        <form id="clientaddForm" class="addForm">
+            <div class="inputs">
+                <input type="text" id="client-name" placeholder="Имя клиента" class="textinput">
+                <input type="text" id="client-number" placeholder="Телефон клиента" class="textinput">
+                <input type="text" id="client-email" placeholder="Почта клиента" class="textinput">
+            </div>
+            <button type="submit" class="pagebuttons">Добавить</button>
+        </form>
+    </div>
+
+    <div class="writeform"><h3>Добавление негра</h3>
+        <form id="negraddForm" class="addForm">
+            <div class="inputs">
+                <input type="text" id="negr-name" placeholder="Имя негра" class="textinput">
+                <input type="text" id="negr-post" placeholder="Должность негра" class="textinput">
+                <textarea name="" id="negr-history" placeholder="История негра" class="textinput area"></textarea>
+                <input type="text" id="negr-age" placeholder="Возраст негра" class="textinput">
+            </div>
+            <button type="submit" class="pagebuttons">Добавить</button>
+        </form>
+    </div>   
+    </div>
+
+    <div class="info">
+        <div class="info_item">
+            <div class="spisok">Заказы</div>
+            <div id="negr-list" class="negr-list">
+            </div>
+        </div>
+        <div class="info_item">
+            <div class="spisok">Клиенты</div>
+            <div id="clientget-list" class="clientget-list">
+            </div>
+        </div>
+        <div class="info_item">
+            <div class="spisok">Негры</div>
+            <div id="negrget-list" class="negrget-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+
+    <script src="../scripts/connectgetclients.js"></script> <!--Получение Клиентов-->
+    <script src="../scripts/connectpurchaseget.js"></script> <!--Получение Заказов-->
+    <script src="../scripts/connectgetnegrs.js"></script> <!--Получение Негров-->
+
+
+    <script src="../scripts/connectpost.js"></script>
+</body>
+</html>

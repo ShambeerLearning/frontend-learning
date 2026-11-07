@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/client/style.css">
+  <title>Day 4</title>
+</head>
+<body>
+  <h2>Partner list</h2>
+  <div class="container">
+    <table id="partners-table">
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Type
+            <td>Rating</td>
+            <td>Phone number</td>
+            <td>Actions</td>
+            </td>
+          </tr>
+        </thead>
+        <tbody id="partners-container">
+          
+        </tbody>
+    </table>
+  </div>
+
+  <form action="" id="AddPartnerForm">
+    <input type="text" id="name" placeholder="Name">
+    <select name="" id="type">
+      <option value="Type">Type</option>
+      <option value="АО">АО</option>
+      <option value="ООО">ООО</option>
+      <option value="ИП">ИП</option>
+    </select>
+    <input type="number" placeholder="Rating" min="1" max="5" step="1" id="rating">
+    <input type="text" placeholder="Directors name" id="director_name">
+    <input type="text" placeholder="Address" id="address">
+    <input type="email" placeholder="Email" id="email">
+    <input type="tel" placeholder="+7 (___) ___-__-__" id="phone_number"  oninput="formatPhoneNumber(this)"/>
+    <button type="submit">Add</button>
+  </form>
+
+  <div class="modal" id="edit-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Redact partner information</h2>
+
+      <form id="edit-partner-form">
+        <input type="hidden"  id="edit-id">
+        <input type="text" id="edit-name" placeholder="Factory name">
+        <select name="" id="edit-type">
+          <option>Type:</option>
+          <option value="АО">АО</option>
+          <option value="ООО">ООО</option>
+          <option value="ИП">ИП</option>
+        </select>
+        <input type="number" id="edit-rating" placeholder="Rating" min="1" max="5" step="1">
+        <input type="text" placeholder="Directors name" id="edit-director">
+        <input type="text" placeholder="Address" id="edit-address">
+        <input type="email" placeholder="Email" id="edit-email">
+        <input type="tel" placeholder="+7 (___)___-__-__" id="edit-phone" oninput="formatPhoneNumber(this)"/>
+        <button type="submit">Save changes</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <script src="/client/node_modules/axios/dist/axios.min.js"></script>
+  <script src="/client/script.js"></script>
+  <script>
+    function formatPhoneNumber(input){
+      let value = input.value.replace(/\D/g, '');
+
+      let formattedValue = '';
+
+      if(value.length > 0){
+        formattedValue = '+' + value.substring(0, 1);
+      }
+      if(value.length > 1) {
+        formattedValue += '(' + value.substring(1, 4); 
+      }
+      if(value.length > 4) {
+        formattedValue += ') ' + value.substring(4, 7);
+      }
+      if(value.length > 7){
+        formattedValue += '-'+ value.substring(7, 9);
+      }
+      if(value.length > 9){
+        formattedValue += '-' + value.substring(9, 11);
+      }
+      input.value = formattedValue;
+    }
+  </script>
+</body>
+</html>

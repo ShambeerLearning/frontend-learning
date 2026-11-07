@@ -1,0 +1,58 @@
+#ticketForm{
+  width: 67rem;
+  box-shadow: 0 0px 5px rgba(92, 92, 92, 0.5);;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+#ticketForm label{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+
+#ticketForm input:not(:last-of-type){
+  margin-top: 0.50em;
+  margin-right: 1em;
+  margin-left: 1.4em;
+  height: 2em;
+}
+
+#problem{
+  margin-top: 0.50em;
+  margin-right: 1em;
+  margin-left: 1.4em;
+  height: 3em;
+}
+
+#urgency{
+  margin-top: 0.50em;
+  margin-right: 1em;
+  margin-left: 1.4em;
+  background-color: white;
+  border: solid 1px #666666;
+  border-radius: 0.2em;
+  height: 2em;
+  padding-left: 1em;
+
+}
+
+.createTicket{
+  width: 10em;
+  margin-left: 1.4em;
+  margin-bottom: 1.4em;
+  margin-top: 1.5em;
+  padding-top: 0.70em;
+  padding-bottom: 0.70em;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #585191;
+  color: white;
+  font-size: 0.9rem;
+	font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,47 @@
+.baton {
+  width: 100px;
+  height: 100px;
+}
+
+.TitleH2 {
+  font-size: 30px;
+}
+
+.card {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.cards {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttonBaton {
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.buttonBaton:hover {
+  border-radius: 10px;
+  background-image: url("../img/baton.png");
+}
+
+.buttonBaton:focus {
+  border-radius: 10px;
+  background-color: green;
+}
+
+.buttonBaton:active {
+  border-radius: 10px;
+  background-color: blue;
+}

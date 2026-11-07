@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url(../fonts/helvetica_regular.otf);
+}
+
+.header__img {
+  background-image: url(../img/logo.svg);
+  width: 70px;
+  height: 74.38px;
+}
+
+.header__textlogo {
+  font-family: "roboto";
+  font-size: 18px;
+  width: 98px;
+  height: 108px;
+}
+
+.header__number {
+  font-family: "roboto";
+  font-size: 18px;
+}
+
+.logo {
+  display: flex;
+  padding: 12px 32px 0px 32px;
+  gap: 861px;
+  width: 1376;
+  height: 108px;
+}
+
+.header__flextext {
+  display: flex;
+  gap: 207px;
+}
+
+.zagl {
+  font-family: helvetica;
+  font-size: 72px;
+  width: 794px;
+  height: 258px;
+}
+
+.knipa {
+  text-decoration: underline;
+  font-family: "roboto";
+  font-size: "18px";
+}
+
+.zagolovokandtext {
+  display: flex;
+  align-items: flex-end;
+  height: 258px;
+}
