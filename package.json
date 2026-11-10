@@ -3,26 +3,24 @@
   "type": "module",
   "private": true,
   "packageManager": "npm@10.8.2",
-  "workspaces": [
-    "projects/full-code-and-html/test",
-    "projects/full-code-and-html/proj1",
-    "projects/full-code-and-html/proj2",
-    "projects/full-code-and-html/proj3",
-    "projects/full-code-and-html/proj4",
-    "projects/only-typescript/fun-proj/test-console"
-  ],
   "scripts": {
-    "dev": "turbo run dev",
-    "single-p": "cd projects/only-typescript/single-proj && npx tsx --watch",
-    "fun-p": "cd projects/only-typescript/fun-proj && npx tsx --watch",
-    "json-p": "cd projects/only-typescript/json-proj && npx tsx --watch",
-    "old-p": "cd projects/only-typescript/old-proj && npx tsx --watch",
-    "gen-project": "node scripts/gen-project.js build",
-    "start-project": "node scripts/start-project.js run"
+    "dev": "node scripts/run-project.js dev",
+    "build": "node scripts/run-project.js build",
+    "gen-project": "node scripts/gen-project.js",
+    "start-project": "node scripts/run-project.js dev",
+    "single-p": "cd projects/only-typescript/single-proj && tsx watch",
+    "fun-p": "cd projects/only-typescript/fun-proj && tsx watch",
+    "json-p": "cd projects/only-typescript/json-proj && tsx watch",
+    "old-p": "cd projects/only-typescript/old-proj && tsx watch",
+    "test-console": "tsx watch projects/only-typescript/fun-proj/test-console/src/index.ts",
+    "analytics": "cd projects/analyticsLearn/proj1 && tsx main.ts"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "dotenv": "^17.2.3",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.3.6",
+    "pg": "^8.16.3",
     "prompt-sync": "^4.2.0",
     "vite-plugin-singlefile": "^2.3.3",
     "zod": "^4.4.3"
@@ -33,7 +31,7 @@
     "@types/prompt-sync": "^4.2.3",
     "preact": "^10.29.7",
     "sass-embedded": "^1.102.0",
-    "turbo": "^2.10.5",
+    "tsx": "^4.20.6",
     "typescript": "^7.0.2",
     "vite": "^8.1.5"
   },
@@ -42,5 +40,9 @@
   "main": "index.js",
   "keywords": [],
   "author": "shamber",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0",
+    "npm": ">=10"
+  }
 }

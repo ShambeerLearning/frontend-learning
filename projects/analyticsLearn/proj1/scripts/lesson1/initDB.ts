@@ -1,10 +1,10 @@
-import path = require("node:path");
+import * as path from "node:path";
 import * as fs from "node:fs";
 import {Client} from "pg";
 import 'dotenv/config';
 
 export async function loadDataToDb() {
-    const filePath = path.join(process.cwd(), 'src', 'data', 'data.json');
+    const filePath = path.join(import.meta.dirname, '..', '..', 'data', 'data.json');
     const fileContent = fs.readFileSync(filePath, 'utf-8');
 
     if (!process.env.DATABASE_URL) {

@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker';
 import {User} from "./User";
 import * as fs from "node:fs";
-import path = require("node:path");
+import * as path from "node:path";
 
 
 function genDataLesson1() {
@@ -24,7 +24,7 @@ function genDataLesson1() {
 }
 
 function writeJson(data: User[]): void {
-    const filePath = path.join(process.cwd(), 'src', 'data', 'data.json');
+    const filePath = path.join(import.meta.dirname, '..', '..', 'data', 'data.json');
     const dirPath = path.dirname(filePath);
     const jsonString = JSON.stringify(data, null, 2);
     if (!fs.existsSync(dirPath)) {

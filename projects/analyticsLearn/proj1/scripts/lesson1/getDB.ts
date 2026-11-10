@@ -2,8 +2,13 @@ import { Client } from 'pg';
 import 'dotenv/config';
 
 export async function checkData() {
+    const connectionString = process.env.DATABASE_URL;
+    if (!connectionString) {
+        throw new Error('Укажи DATABASE_URL в окружении или в файле .env проекта аналитики.');
+    }
+
     const client = new Client({
-        connectionString: process.env.DATABASE_URL,
+        connectionString,
         ssl: {
             rejectUnauthorized: false
         }
